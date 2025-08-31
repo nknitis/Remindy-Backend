@@ -7,11 +7,11 @@ import startScheduler from "./utils/scheduler.js";
 
 const app = express();
 
-// app.use(cors());
-app.use(cors({
-  origin: 'https://remindly-frontend.netlify.app', // only allow this origin
-  credentials: true
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: 'https://remindly-frontend.netlify.app', // only allow this origin
+//   credentials: true
+// }));
 app.use(express.json());
 
 // API routes
